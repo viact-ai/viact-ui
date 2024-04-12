@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "outDir": "lib",
+        "module": "esnext",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "target": "esnext",
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "noImplicitReturns": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "declaration": true,
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src",
+        "rollup.config.js",
+        "src/images.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "lib"
+    ]
+}
