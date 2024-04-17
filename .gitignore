@@ -2,8 +2,7 @@
 
 # dependencies
 node_modules
-lib
-/lib
+/lib/
 /packages/*/lib
 /src/lib/*/node_modules
 /.pnp
