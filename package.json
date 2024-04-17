@@ -9,7 +9,8 @@
     "dev": "npm run svgr && rollup -c",
     "dev:watch": "rollup -c --watch",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "postinstall": "npm run build"
   },
   "files": [
     "lib"
