@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "svgr": "svgr --icon --title-prop --no-dimensions --replace-attr-values '#4F4F4F=currentColor,#BDBDBD=currentColor,#2F80ED=currentColor,#FF6A3D=currentColor,#828282=currentColor' --typescript -d src/icons src/assets/icons",
-    "prebuild": "rm -rf dist/*",
+    "prebuild": "rm -rf lib",
     "build": "rollup -c",
     "dev": "npm run svgr && rollup -c",
     "dev:watch": "rollup -c --watch",
