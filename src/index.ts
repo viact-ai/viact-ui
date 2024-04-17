@@ -72,6 +72,7 @@ import ConfirmDialog from './components/ConfirmDialog'
 import EditableField from './components/EditableField'
 import ComponentWithLoading from './components/ComponentWithLoading'
 import Image from './components/Image'
+import TestUpdateLib from './components/TestUpdateLib/TestUpdateLib'
 
 export {
   Modal,
@@ -146,4 +147,5 @@ export {
   ComponentWithLoading,
   ClickAwayListener,
   Image,
+  TestUpdateLib,
 }
