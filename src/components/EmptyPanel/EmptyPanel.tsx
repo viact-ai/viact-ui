@@ -1,7 +1,7 @@
 import { CircularProgress, Box, Typography } from '@mui/material'
 import React from 'react'
 
-interface EmptyPanelProps {
+export interface EmptyPanelProps {
   isLoading?: boolean
   iconEmpty?: string
   titleEmpty: string

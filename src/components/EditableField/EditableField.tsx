@@ -12,7 +12,7 @@ import {
   Typography,
 } from '@mui/material'
 
-interface EditableFieldProps extends Omit<InputBaseProps, 'onChange'> {
+export interface EditableFieldProps extends Omit<InputBaseProps, 'onChange'> {
   defaultValue: string
   errorMessage?: string
   inputRef?: React.RefObject<HTMLInputElement>

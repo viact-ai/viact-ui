@@ -2,6 +2,8 @@
 
 # dependencies
 node_modules
+lib
+/lib
 /packages/*/lib
 /src/lib/*/node_modules
 /.pnp
@@ -29,3 +31,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 configs-feature.json
+*storybook.log

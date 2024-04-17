@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { Chip, Box } from '@mui/material'
 
-interface Props {
+export interface Props {
   label: string
   colorDot?: string
   type?: 'error' | 'success'
