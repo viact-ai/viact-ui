@@ -6,7 +6,7 @@ interface ButtonActions {
     type?: string;
     handler: any;
 }
-interface ModalProps extends DialogProps {
+export interface ModalProps extends DialogProps {
     actions?: Array<ButtonActions>;
     children: React.ReactNode;
     disabledOutsiteClick?: boolean;

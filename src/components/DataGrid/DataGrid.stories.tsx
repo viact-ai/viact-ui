@@ -1,17 +1,17 @@
 // GridData.stories.tsx
 
-import React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
-import DataGrid, { GridDataProps } from './DataGrid';
+import React from 'react'
+import { StoryFn as Story, Meta } from '@storybook/react'
+import DataGrid, { GridDataProps } from './DataGrid'
 
 export default {
   title: 'Components/D/DataGrid',
   component: DataGrid,
-} as Meta;
+} as Meta
 
-const Template: Story<GridDataProps> = (args) => <DataGrid {...args} />;
+const Template: Story<GridDataProps> = (args) => <DataGrid {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   columns: [
     { label: 'Column 1', property: 'col1' },
@@ -27,5 +27,6 @@ Default.args = {
   rowsPerPageOptions: [5, 10, 50],
   onPageChange: (value: number) => console.log('Page changed:', value),
   onPageSizeChange: (value: number) => console.log('Page size changed:', value),
-  onOderByChange: (property: string, orderDirection: 'asc' | 'desc') => console.log('Order by changed:', property, orderDirection),
-};
+  onOderByChange: (property: string, orderDirection: 'asc' | 'desc') =>
+    console.log('Order by changed:', property, orderDirection),
+}

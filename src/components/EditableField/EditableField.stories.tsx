@@ -1,17 +1,19 @@
 // EditableField.stories.tsx
 
-import React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
-import EditableField, { EditableFieldProps } from './EditableField';
+import React from 'react'
+import { StoryFn as Story, Meta } from '@storybook/react'
+import EditableField, { EditableFieldProps } from './EditableField'
 
 export default {
   title: 'Components/E/EditableField',
   component: EditableField,
-} as Meta;
+} as Meta
 
-const Template: Story<EditableFieldProps> = (args) => <EditableField {...args} />;
+const Template: Story<EditableFieldProps> = (args) => (
+  <EditableField {...args} />
+)
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   defaultValue: 'Editable Field',
   errorMessage: 'This field is required',
@@ -22,4 +24,4 @@ Default.args = {
   variant: 'standard',
   onChange: (value: string) => console.log('Change:', value),
   onSave: (value: string) => console.log('Save:', value),
-};
+}
