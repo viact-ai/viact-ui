@@ -29,7 +29,7 @@ function File({
       <path
         stroke="currentColor"
         strokeWidth={1.5}
-        d="M3.75 7A3.25 3.25 0 0 1 7 3.75h5.25v4.5h-8.5V7Z"
+        d="M3.75 7A3.25 3.25 0 0 1 7 3.75h5.25v4.5h-8.5z"
       />
     </svg>
   )

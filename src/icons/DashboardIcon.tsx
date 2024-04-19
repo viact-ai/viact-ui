@@ -19,7 +19,7 @@ function DashboardIcon({
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         fill="currentColor"
-        d="M11.25 13.5h1.5v3h-1.5v-3ZM15 12h1.5v4.5H15V12ZM7.5 9H9v7.5H7.5V9Z"
+        d="M11.25 13.5h1.5v3h-1.5zM15 12h1.5v4.5H15zM7.5 9H9v7.5H7.5z"
       />
       <rect
         width={16.5}

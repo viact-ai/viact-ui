@@ -18,7 +18,7 @@ function Gmail({
       {...props}>
       {title ? <title id={titleId}>{title}</title> : null}
       <rect width={42} height={42} fill="#EB5757" rx={8} />
-      <path fill="#fff" d="M31 13H11v16h20V13Zm-2 4-8 5-8-5v-2l8 5 8-5v2Z" />
+      <path fill="#fff" d="M31 13H11v16h20zm-2 4-8 5-8-5v-2l8 5 8-5z" />
     </svg>
   )
 }

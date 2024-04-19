@@ -19,7 +19,7 @@ function Minus({
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         fill="currentColor"
-        d="M9 6.499H3a.5.5 0 1 1 0-1h6a.5.5 0 1 1 0 1Z"
+        d="M9 6.499H3a.5.5 0 1 1 0-1h6a.5.5 0 1 1 0 1"
       />
     </svg>
   )

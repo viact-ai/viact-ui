@@ -20,7 +20,7 @@ function Next({
       <g clipPath="url(#next_svg__a)">
         <path
           fill="currentColor"
-          d="m13.3 5.303-1.4 1.4 4.3 4.3H4v2h12.2l-4.3 4.3 1.4 1.4 6.7-6.7-6.7-6.7Z"
+          d="m13.3 5.303-1.4 1.4 4.3 4.3H4v2h12.2l-4.3 4.3 1.4 1.4 6.7-6.7z"
         />
       </g>
       <defs>

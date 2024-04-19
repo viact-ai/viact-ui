@@ -17,11 +17,11 @@ function AiModule({
       aria-labelledby={titleId}
       {...props}>
       {title ? <title id={titleId}>{title}</title> : null}
-      <path fill="url(#AIModule_svg__a)" d="M52 28H28v24h24V28Z" />
+      <path fill="url(#AIModule_svg__a)" d="M52 28H28v24h24z" />
       <path
         fill="url(#AIModule_svg__b)"
         fillRule="evenodd"
-        d="M28 8a4 4 0 1 1 8 0v4h8V8a4 4 0 1 1 8 0v4h8a8 8 0 0 1 8 8v8h4a4 4 0 1 1 0 8h-4v8h4a4 4 0 1 1 0 8h-4v8a8 8 0 0 1-8 8h-8v4a4 4 0 1 1-8 0v-4h-8v4a4 4 0 1 1-8 0v-4h-8a8 8 0 0 1-8-8v-8H8a4 4 0 1 1 0-8h4v-8H8a4 4 0 1 1 0-8h4v-8a8 8 0 0 1 8-8h8V8Zm-8 12h40v40H20V20Z"
+        d="M28 8a4 4 0 1 1 8 0v4h8V8a4 4 0 1 1 8 0v4h8a8 8 0 0 1 8 8v8h4a4 4 0 1 1 0 8h-4v8h4a4 4 0 1 1 0 8h-4v8a8 8 0 0 1-8 8h-8v4a4 4 0 1 1-8 0v-4h-8v4a4 4 0 1 1-8 0v-4h-8a8 8 0 0 1-8-8v-8H8a4 4 0 1 1 0-8h4v-8H8a4 4 0 1 1 0-8h4v-8a8 8 0 0 1 8-8h8zm-8 12h40v40H20z"
         clipRule="evenodd"
       />
       <defs>

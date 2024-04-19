@@ -22,21 +22,21 @@ function ViActShare({
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M3.333 5c0 1.38 2.986 2.5 6.667 2.5 3.682 0 6.667-1.12 6.667-2.5S13.682 2.5 10 2.5C6.32 2.5 3.333 3.62 3.333 5Z"
+        d="M3.334 5c0 1.38 2.985 2.5 6.666 2.5s6.667-1.12 6.667-2.5S13.682 2.5 10 2.5 3.334 3.62 3.334 5"
       />
       <path
         stroke="#27AE60"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M3.333 5v5c0 1.38 2.986 2.5 6.667 2.5.301 0 .597-.008.888-.022m5.779-1.645V5"
+        d="M3.334 5v5c0 1.38 2.985 2.5 6.666 2.5q.451 0 .888-.022m5.779-1.645V5"
       />
       <path
         stroke="#27AE60"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M3.333 10v5c0 1.38 2.986 2.5 6.667 2.5m3.334.833 4.166-4.166m0 0v3.75m0-3.75h-3.75"
+        d="M3.334 10v5c0 1.38 2.985 2.5 6.666 2.5m3.334.833 4.166-4.166m0 0v3.75m0-3.75h-3.75"
       />
     </svg>
   )

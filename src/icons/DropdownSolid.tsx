@@ -18,7 +18,7 @@ function DropdownSolid({
       {...props}>
       {title ? <title id={titleId}>{title}</title> : null}
       <g clipPath="url(#dropdownSolid_svg__a)">
-        <path fill="currentColor" d="M6.984 9.984h10.032L12 15 6.984 9.984Z" />
+        <path fill="currentColor" d="M6.984 9.984h10.032L12 15z" />
       </g>
       <defs>
         <clipPath id="dropdownSolid_svg__a">

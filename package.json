@@ -59,6 +59,8 @@
     "@storybook/react-webpack5": "8.0.6",
     "@storybook/test": "8.0.6",
     "@svgr/cli": "^8.0.1",
+    "eslint": "7",
+    "prettier": "^3.2.5",
     "rollup-watch": "^4.3.1",
     "storybook": "8.0.6"
   }

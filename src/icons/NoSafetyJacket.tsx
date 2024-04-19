@@ -33,11 +33,11 @@ function NoSafetyJacket({
           stroke="#fff"
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M27 11.004h-2.5l-3.5 10v10h8v-12.5l-2-3v-4.5Zm-12 0h2.5l3.5 10v10h-8v-12.5l2-3v-4.5Z"
+          d="M27 11.004h-2.5l-3.5 10v10h8v-12.5l-2-3zm-12 0h2.5l3.5 10v10h-8v-12.5l2-3z"
         />
       </mask>
       <g mask="url(#no-safety-jacket_svg__a)">
-        <path fill="#fff" d="M9 9h33v33H9V9Z" />
+        <path fill="#fff" d="M9 9h33v33H9z" />
       </g>
     </svg>
   )

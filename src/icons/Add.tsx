@@ -19,7 +19,7 @@ function Add({
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         fill="currentColor"
-        d="M10.625 9.375V5h-1.25v4.375H5v1.25h4.375V15h1.25v-4.375H15v-1.25h-4.375Z"
+        d="M10.625 9.375V5h-1.25v4.375H5v1.25h4.375V15h1.25v-4.375H15v-1.25z"
       />
     </svg>
   )

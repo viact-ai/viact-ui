@@ -21,7 +21,7 @@ function Tick({
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="m2.063 6.563 2.624 2.625 5.25-5.626"
+        d="m2.063 6.563 2.625 2.625 5.25-5.626"
       />
     </svg>
   )

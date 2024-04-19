@@ -18,7 +18,7 @@ function Indicator({
       {...props}>
       {title ? <title id={titleId}>{title}</title> : null}
       <path stroke="currentColor" strokeWidth={3} d="M11.5 172V0" />
-      <path fill="currentColor" d="M8 8a8 8 0 0 1-8-8h23a8 8 0 0 1-8 8H8Z" />
+      <path fill="currentColor" d="M8 8a8 8 0 0 1-8-8h23a8 8 0 0 1-8 8z" />
     </svg>
   )
 }

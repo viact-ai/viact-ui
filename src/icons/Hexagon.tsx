@@ -21,7 +21,7 @@ function Hexagon({
         stroke="currentColor"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="m16.167 19.083 4.166-7.084-4.166-7.083H7.833l-4.166 7.083 4.166 7.084h8.334Z"
+        d="m16.167 19.083 4.166-7.084-4.166-7.083H7.833l-4.166 7.083 4.166 7.084z"
       />
       <path
         stroke="currentColor"
