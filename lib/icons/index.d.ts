@@ -211,3 +211,4 @@ export { default as Whatsapp } from './Whatsapp';
 export { default as WidthOutlined } from './WidthOutlined';
 export { default as Window } from './Window';
 export { default as WorkerCountingGuid } from './WorkerCountingGuid';
+export { default as Zoom } from './Zoom';
