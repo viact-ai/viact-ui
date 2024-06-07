@@ -42,6 +42,7 @@ export { default as Close } from './Close';
 export { default as CloseCircle } from './CloseCircle';
 export { default as CloudOutlined } from './CloudOutlined';
 export { default as CloudSlash } from './CloudSlash';
+export { default as Comment } from './Comment';
 export { default as CountingInOut } from './CountingInOut';
 export { default as CountingIn } from './CountingIn';
 export { default as CountingOut } from './CountingOut';
