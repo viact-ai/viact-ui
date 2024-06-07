@@ -29,6 +29,7 @@ export { default as BarrierCollision } from './BarrierCollision';
 export { default as Bell } from './Bell';
 export { default as Building } from './Building';
 export { default as Calendar } from './Calendar';
+export { default as CameraDetailsStatus } from './CameraDetailsStatus';
 export { default as Camera } from './Camera';
 export { default as Camera2 } from './Camera2';
 export { default as CameraCctv } from './CameraCctv';
