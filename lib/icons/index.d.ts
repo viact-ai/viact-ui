@@ -55,6 +55,7 @@ export { default as DangerZone2 } from './DangerZone2';
 export { default as DashboardEvent } from './DashboardEvent';
 export { default as Dashboard } from './Dashboard';
 export { default as DashboardIcon } from './DashboardIcon';
+export { default as DateRange } from './DateRange';
 export { default as Deactive } from './Deactive';
 export { default as DefaultEngine } from './DefaultEngine';
 export { default as Deploy } from './Deploy';
