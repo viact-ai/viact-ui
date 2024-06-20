@@ -5,7 +5,7 @@ import { Box, Typography } from '@mui/material'
 // import ViMacPng from '../../assets/images/vi-mac-icon.png'
 // import ViMovPng from '../../assets/images/vi-mov-icon.png'
 import styled from '@emotion/styled'
-import { ViMov, ViTag } from '../../icons'
+import { ViMov, ViTag, Workstation } from '../../icons'
 type Props = {
   id?: string
   type?: 'vi-tag' | 'vi-mov' | 'vi-mac'
@@ -28,6 +28,7 @@ const objectImg = {
   'vi-tag': <ViTag width={25} height={25} />,
   'vi-mac': <></>,
   'vi-mov': <ViMov width={25} height={25} />,
+  'workstation': <Workstation width={25} height={25} />,
 }
 
 function DeviceId({ id, type = 'vi-tag' }: Props) {
