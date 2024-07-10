@@ -4,26 +4,24 @@ import { styled } from '@mui/system'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 
-const DialogPaperMobile = styled('div')(({ theme }) => ({
+const DialogPaperMobile = styled('div')(() => ({
   borderRadius: '16px 16px 0 0',
   margin: 0,
   position: 'fixed',
   bottom: 0,
   maxWidth: '100% !important',
   width: '100%',
-  [theme.breakpoints.down('sm')]: {
-    overflowY: 'scroll',
-    scrollbarWidth: 'none',
-    '&::-webkit-scrollbar': {
-      width: '0px',
-    },
+  overflowY: 'scroll',
+  scrollbarWidth: 'none',
+  '&::-webkit-scrollbar': {
+    width: '0px',
   },
 }))
 
-const DialogPaperDesktop = styled('div')(({ theme }) => ({
+const DialogPaperDesktop = styled('div')(() => ({
   borderRadius: 5,
-  padding: theme.spacing(2),
-  margin: theme.spacing(1),
+  padding: '8px',
+  margin: '4px',
 }))
 
 const OverlayMobile = styled('div')({
