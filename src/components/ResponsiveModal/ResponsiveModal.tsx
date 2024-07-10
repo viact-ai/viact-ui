@@ -4,7 +4,6 @@ import { styled } from '@mui/system'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 
-// Custom styled components
 const DialogPaperMobile = styled('div')(({ theme }) => ({
   borderRadius: '16px 16px 0 0',
   margin: 0,
@@ -35,10 +34,6 @@ const OverlayDesktop = styled('div')({
   backgroundColor: 'rgba(0, 0, 0, 0.3)',
 })
 
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />
-})
-
 interface ResponsiveModalProps extends DialogProps {
   children: React.ReactNode
 }
@@ -52,7 +47,6 @@ const ResponsiveModal = (props: ResponsiveModalProps) => {
       open={props.open}
       onClose={props.onClose}
       PaperComponent={isMobile ? DialogPaperMobile : DialogPaperDesktop}
-      TransitionComponent={isMobile ? Transition : undefined}
       BackdropProps={{
         component: isMobile ? OverlayMobile : OverlayDesktop,
       }}

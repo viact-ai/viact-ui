@@ -14,6 +14,7 @@ import ConfirmDialog from './components/ConfirmDialog'
 import EditableField from './components/EditableField'
 import ComponentWithLoading from './components/ComponentWithLoading'
 import Image from './components/Image'
+import YearMonthPicker from './components/YearMonthPicker'
 
 export {
   Modal,
@@ -31,4 +32,5 @@ export {
   EditableField,
   ComponentWithLoading,
   Image,
+  YearMonthPicker,
 }

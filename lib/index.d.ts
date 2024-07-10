@@ -14,4 +14,5 @@ import ConfirmDialog from './components/ConfirmDialog';
 import EditableField from './components/EditableField';
 import ComponentWithLoading from './components/ComponentWithLoading';
 import Image from './components/Image';
-export { Modal, MarkedState, DataGrid, ChipStatus, DeviceId, DesktopDatePicker, DateTimePicker, LocalizationProvider, AdapterDateFns, EmptyPanel, SelectBox, ConfirmDialog, EditableField, ComponentWithLoading, Image, };
+import YearMonthPicker from './components/YearMonthPicker';
+export { Modal, MarkedState, DataGrid, ChipStatus, DeviceId, DesktopDatePicker, DateTimePicker, LocalizationProvider, AdapterDateFns, EmptyPanel, SelectBox, ConfirmDialog, EditableField, ComponentWithLoading, Image, YearMonthPicker, };
