@@ -8,7 +8,8 @@ export default {
 } as Meta
 
 const Template: Story<YearMonthPickerProps> = args => {
-  return <YearMonthPicker {...args} />
+  const onChange = value => console.log('value', value)
+  return <YearMonthPicker {...args} onChange={onChange} />
 }
 
 export const Default = Template.bind({})

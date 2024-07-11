@@ -27,16 +27,12 @@ export default function YearMonthPicker({
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null)
   const [date, setDate] = React.useState<any>(value ? dayjs(value) : undefined)
 
-  // React.useEffect(() => {
-  //   setDate(value ? dayjs(value) : null)
-  // }, [value])
-
-  const handleClose = () => {
+  const handleClose = React.useCallback(() => {
     setAnchorEl(undefined)
     if (onChange) {
-      onChange(date)
+      onChange(date?.toDate())
     }
-  }
+  }, [date])
 
   const handleOpen = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget)
@@ -44,13 +40,10 @@ export default function YearMonthPicker({
 
   const handleChange = React.useCallback(
     (v: Date) => {
-      alert(v)
       setDate(v ? dayjs(v) : undefined)
     },
     [date],
   )
-
-  console.log('date', date)
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
