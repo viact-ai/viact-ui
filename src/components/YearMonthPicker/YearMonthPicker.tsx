@@ -13,22 +13,44 @@ export interface YearMonthPickerProps {
   value?: Date
   inputRender?: React.ReactNode
   fullWidth?: boolean
+  onChange?: (value: Date) => void
 }
 
 export default function YearMonthPicker({
   value = new Date(),
   inputRender,
   fullWidth,
+  onChange,
 }: YearMonthPickerProps) {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null)
+  const [date, setDate] = React.useState<any>(value ? dayjs(value) : undefined)
 
-  const handleClose = () => setAnchorEl(undefined)
+  // React.useEffect(() => {
+  //   setDate(value ? dayjs(value) : null)
+  // }, [value])
+
+  const handleClose = () => {
+    setAnchorEl(undefined)
+    if (onChange) {
+      onChange(date)
+    }
+  }
 
   const handleOpen = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget)
   }
+
+  const handleChange = React.useCallback(
+    (v: Date) => {
+      alert(v)
+      setDate(v ? dayjs(v) : undefined)
+    },
+    [date],
+  )
+
+  console.log('date', date)
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -59,12 +81,38 @@ export default function YearMonthPicker({
                   fontWeight: 400,
                   textTransform: 'capitalize',
                 }}>
-                {dayjs(value).format('MMMM, YYYY')}
+                {dayjs(date)?.format('MMMM, YYYY')}
               </Typography>
             </>
           )}
         </Button>
-        {isMobile ? (
+        <Popover
+          open={!!anchorEl}
+          anchorEl={anchorEl}
+          onClose={handleClose}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'left',
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'left',
+          }}
+          PaperProps={{
+            style: {
+              maxHeight: 300,
+              maxWidth: 300,
+              minWidth: 200,
+            },
+          }}>
+          <DateCalendar
+            value={date}
+            views={['month', 'year']}
+            openTo="month"
+            onChange={handleChange}
+          />
+        </Popover>
+        {/* {isMobile ? (
           <ResponsiveModal
             open={!!anchorEl}
             onClose={handleClose}
@@ -97,7 +145,7 @@ export default function YearMonthPicker({
             }}>
             <DateCalendar views={['month', 'year']} openTo="month" />
           </Popover>
-        )}
+        )} */}
       </>
     </LocalizationProvider>
   )
